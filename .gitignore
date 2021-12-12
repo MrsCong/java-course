@@ -1,1 +1,9 @@
-custom_order.class
+########################################
+
+# IDE
+.idea
+*.iws
+*.iml
+*.ipr
+
+out
