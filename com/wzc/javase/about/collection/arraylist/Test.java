@@ -24,7 +24,7 @@ public class Test {
         while (iterator.hasNext()) {
             System.out.println(iterator.next().getName());
         }
-//        treeSet.forEach(v-> System.out.println(v.getName()));
+        treeSet.forEach(v-> System.out.println(v.getName()));
     }
 
 }
