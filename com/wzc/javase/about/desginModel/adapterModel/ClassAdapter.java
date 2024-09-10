@@ -24,6 +24,6 @@ public class ClassAdapter extends Adaptee implements TargetInterFace{
 
     @Override
     public void world() {
-
+        super.world();
     }
 }

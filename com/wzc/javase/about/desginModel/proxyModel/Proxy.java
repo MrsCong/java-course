@@ -1,5 +1,7 @@
 package com.wzc.javase.about.desginModel.proxyModel;
 
+/**
+ */
 public class Proxy implements CommonMethod {
 
     private CommonMethod commonMethod;

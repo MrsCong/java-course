@@ -1,5 +1,8 @@
 package com.wzc.javase.about.thread.cas;
 
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicStampedReference;
+
 public class SynchronizedDemo {
 
     public synchronized void test() {

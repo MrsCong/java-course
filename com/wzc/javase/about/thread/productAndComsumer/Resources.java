@@ -1,6 +1,12 @@
 package com.wzc.javase.about.thread.productAndComsumer;
 
+import sun.nio.ch.ThreadPool;
+
 import java.util.Random;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 
 public class Resources {
 

@@ -31,6 +31,7 @@ public class SubjectImpl implements Subject {
         }
     }
 
+    @Override
     public void operate() {
         System.out.println("执行操作完毕");
         notifyAllObserver();

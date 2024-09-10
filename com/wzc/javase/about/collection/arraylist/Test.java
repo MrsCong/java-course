@@ -1,6 +1,8 @@
 package com.wzc.javase.about.collection.arraylist;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 import java.util.TreeSet;
 
@@ -14,11 +16,15 @@ public class Test {
         Student s1 = new Student("zhangshan",10);
         Student s2 = new Student("lisi",15);
         Student s3 = new Student("wangwu",12);
-        TreeSet<Student> treeSet = new TreeSet<>(((o1, o2) -> o1.getAge()-o2.getAge()));
+        TreeSet<Student> treeSet = new TreeSet<>((Comparator.comparingInt(Student::getAge)));
         treeSet.add(s1);
         treeSet.add(s2);
         treeSet.add(s3);
-        treeSet.forEach(v-> System.out.println(v.getName()));
+        Iterator<Student> iterator = treeSet.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next().getName());
+        }
+//        treeSet.forEach(v-> System.out.println(v.getName()));
     }
 
 }

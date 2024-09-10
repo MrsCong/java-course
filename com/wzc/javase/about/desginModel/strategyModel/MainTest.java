@@ -1,7 +1,7 @@
 package com.wzc.javase.about.desginModel.strategyModel;
 
 /**
- * 类描述:
+ * 策略模式定义:定义一组算法，将每个算法都封装起来，并且使它们之间可以互换
  *
  * @author 吴智聪
  * @version 1.0

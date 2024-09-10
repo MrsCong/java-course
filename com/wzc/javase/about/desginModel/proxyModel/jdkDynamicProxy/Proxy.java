@@ -12,8 +12,7 @@ public class Proxy implements InvocationHandler {
     }
 
     public Object getProxyObj() {
-        Object o = java.lang.reflect.Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(), this);
-        return o;
+        return java.lang.reflect.Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(), this);
     }
 
     @Override
